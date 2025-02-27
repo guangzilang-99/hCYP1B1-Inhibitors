@@ -1,0 +1,270 @@
+#引用包
+library(limma)
+library(org.Hs.eg.db)
+library(clusterProfiler)
+library(enrichplot)
+library(ggplot2)
+library(tidyverse)
+#读取文件,并对输入文件进行整理
+rt=read.table("TCGA_all_TPM.txt", header=T, sep="\t", check.names=F)
+#以01A和11A分组，提取肿瘤数据
+rt_T=rt%>% dplyr::select(str_which(colnames(.), "-01A"))
+data=avereps(rt_T)
+
+BiocManager::install("ensembldb")
+
+a#高低表达组比较，得到logFC
+gene="CFTR"              #基因名称
+dataL=data[,data[gene,]<=median(data[gene,]),drop=F]
+dataH=data[,data[gene,]>median(data[gene,]),drop=F]
+meanL=rowMeans(dataL)
+meanH=rowMeans(dataH)
+meanL[meanL<0.00001]=0.00001
+meanH[meanH<0.00001]=0.00001
+logFC=log2(meanH)-log2(meanL)
+logFC=sort(logFC,decreasing=T)
+genes=names(logFC)
+
+
+#GO
+#读入基因集文件
+gmt=read.gmt("c5.go.v7.4.symbols.gmt")
+
+#富集分析
+kk=GSEA(logFC, TERM2GENE=gmt, pvalueCutoff = 1)
+kkTab=as.data.frame(kk)
+kkTab=kkTab[kkTab$pvalue<0.05,]
+write.table(kkTab,file=paste0(gene,"_GSEA.result-GO.txt"),sep="\t",quote=F,row.names = F)
+
+#输出富集的图形
+termNum=5    #展示前5个通路
+if(nrow(kkTab)>=termNum){
+  showTerm=row.names(kkTab)[1:termNum]
+  gseaplot=gseaplot2(kk, showTerm, base_size=8, title="")
+  gseaplot[[1]]=gseaplot[[1]]+theme(legend.position="right",legend.direction="vertical")
+  pdf(file=paste0(gene,"_GSEA-GO.pdf"), width=10, height=8)
+  print(gseaplot)
+  dev.off()
+}
+if(nrow(kkTab)<termNum){
+  showTerm=row.names(kkTab)[1:nrow(kkTab)]
+  gseaplot=gseaplot2(kk, showTerm, base_size=8, title="")
+  gseaplot[[1]]=gseaplot[[1]]+theme(legend.position="right",legend.direction="vertical")
+  pdf(file=paste0(gene,"_GSEA-GO.pdf"), width=10, height=8)
+  print(gseaplot)
+  dev.off()
+}
+
+#KEGG
+#读入基因集文件
+gmt=read.gmt("c2.cp.kegg.v7.4.symbols.gmt")
+
+#富集分析
+kk=GSEA(logFC, TERM2GENE=gmt, pvalueCutoff = 1)
+kkTab=as.data.frame(kk)
+kkTab=kkTab[kkTab$pvalue<0.05,]
+write.table(kkTab,file=paste0(gene,"_GSEA.result-KEGG.txt"),sep="\t",quote=F,row.names = F)
+
+#输出富集的图形
+termNum=5    #展示前5个通路
+if(nrow(kkTab)>=termNum){
+  showTerm=row.names(kkTab)[1:termNum]
+  gseaplot=gseaplot2(kk, showTerm, base_size=8, title="")
+  gseaplot[[1]]=gseaplot[[1]]+theme(legend.position="right",legend.direction="vertical")
+  pdf(file=paste0(gene,"_GSEA-KEGG.pdf"), width=10, height=8)
+  print(gseaplot)
+  dev.off()
+}
+if(nrow(kkTab)<termNum){
+  showTerm=row.names(kkTab)[1:nrow(kkTab)]
+  gseaplot=gseaplot2(kk, showTerm, base_size=8, title="")
+  gseaplot[[1]]=gseaplot[[1]]+theme(legend.position="right",legend.direction="vertical")
+  pdf(file=paste0(gene,"_GSEA-KEGG.pdf"), width=10, height=8)
+  print(gseaplot)
+  dev.off()
+}
+
+############################################################################################################
+# 加载必要的 R 包
+library(limma)
+library(clusterProfiler)
+library(enrichplot)
+library(ggplot2)
+library(tidyverse)
+library(EnsDb.Hsapiens.v86)
+library(org.Hs.eg.db)
+
+# 读取 RNAseq 表达数据（行是基因，列是样本）
+rt <- read.table("RNAseq_data.txt", header=T, sep="\t", check.names=F, row.names=1)
+
+# 获取基因名（ENSEMBL ID）
+gene_ids <- rownames(rt)
+
+# **去重**
+rt <- rt[!duplicated(gene_ids), ]
+
+# **转换 ENSEMBL ID 为 ENTREZID**
+converted_genes <- mapIds(
+  EnsDb.Hsapiens.v86,
+  keys = gene_ids,
+  column = "ENTREZID",
+  keytype = "GENEID",
+  multiVals = "first"
+)
+
+# 仅保留有 ENTREZID 的行
+valid_genes <- !is.na(converted_genes)
+rt <- rt[valid_genes, ]
+converted_genes <- converted_genes[valid_genes]
+
+# **处理重复 ENTREZID**
+if (any(duplicated(converted_genes))) {
+  print("存在重复 ENTREZID，正在合并这些基因的表达数据...")
+  
+  # 绑定 ENTREZID 并计算均值
+  rt <- cbind(ENTREZID = converted_genes, rt)
+  rt <- rt %>%
+    group_by(ENTREZID) %>%
+    summarise(across(everything(), mean, na.rm=TRUE))
+  
+  # 设置 ENTREZID 作为行名并删除该列
+  rownames(rt) <- rt$ENTREZID
+  rt <- rt[, -1]
+} else {
+  rownames(rt) <- converted_genes
+}
+
+# **检查 NaN 并替换**
+rt[is.na(rt)] <- 0  
+
+# **定义样本分组**
+control_samples <- c("Control_1", "Control_2", "Control_3")
+treatment_samples <- c("Treatment_1", "Treatment_2", "Treatment_3")
+
+# **计算 logFC**
+meanL <- rowMeans(rt[, control_samples], na.rm=TRUE)
+meanH <- rowMeans(rt[, treatment_samples], na.rm=TRUE)
+
+# 避免 log 计算问题
+meanL[meanL < 0.00001] <- 0.00001
+meanH[meanH < 0.00001] <- 0.00001
+
+logFC <- log2(meanH) - log2(meanL)
+
+# **去除异常值**
+logFC <- logFC[!is.na(logFC) & !is.infinite(logFC)]
+
+# **确保 logFC 有正确的基因 ID**
+names(logFC) <- rownames(rt)
+logFC <- sort(logFC, decreasing = TRUE)
+
+# **读取 GO 术语集**
+gmt_go <- read.gmt("c5.go.v7.4.symbols.gmt")
+
+# **转换 gmt_go 的 SYMBOL 为 ENTREZID**
+gmt_go$ENTREZID <- mapIds(
+  org.Hs.eg.db,
+  keys = gmt_go$gene,
+  column = "ENTREZID",
+  keytype = "SYMBOL",
+  multiVals = "first"
+)
+
+# 移除无法映射的基因
+gmt_go <- gmt_go[!is.na(gmt_go$ENTREZID), ]
+
+# 重新命名列以匹配 `TERM2GENE` 格式
+gmt_go <- gmt_go[, c("term", "ENTREZID")]
+colnames(gmt_go) <- c("TERM", "GENE")
+
+# **执行 GSEA (GO)**
+kk_go <- tryCatch({
+  GSEA(logFC, TERM2GENE=gmt_go, pvalueCutoff=1)
+}, error = function(e) {
+  print("GO GSEA 失败！请检查数据格式")
+  return(NULL)
+})
+
+if (!is.null(kk_go)) {
+  kkTab_go <- as.data.frame(kk_go) %>% dplyr::filter(pvalue < 0.05)
+  write.table(kkTab_go, file="GSEA_result_GO.txt", sep="\t", quote=F, row.names=F)
+  
+  # **绘制 GO 富集分析图**
+  if (nrow(kkTab_go) >= 5) {
+    showTerm <- row.names(kkTab_go)[35:39]
+  } else {
+    showTerm <- row.names(kkTab_go)
+  }
+  
+  pdf(file="GSEA-GO35-39.pdf", width=10, height=8)
+  print(gseaplot2(kk_go, showTerm, base_size=8, title="GO GSEA"))
+  dev.off()
+}
+# 确保 GSEA 结果不是 NULL
+if (!is.null(kk_kegg)) {
+  # 将 GSEA 结果转换为数据框，并正确调用 `dplyr::filter()`
+  kkTab_kegg <- as.data.frame(kk_kegg) %>%
+    dplyr::filter(p.adjust < 0.05)  # 使用调整后的 P 值（p.adjust）
+  
+  # 仅当有显著富集结果时才保存和绘图
+  if (nrow(kkTab_kegg) > 0) {
+    write.table(kkTab_kegg, file="GSEA_result_KEGG.txt", sep="\t", quote=F, row.names=F)
+    
+    # **绘制 KEGG 富集分析图**
+    showTerm <- kkTab_kegg$ID[1:min(5, nrow(kkTab_kegg))]  # 取前 5 个显著通路
+    
+    pdf(file="GSEA-KEGG.pdf", width=10, height=8)
+    print(gseaplot2(kk_kegg, showTerm, base_size=8, title="KEGG GSEA"))
+    dev.off()
+  } else {
+    print("KEGG GSEA 结果没有显著富集的通路")
+  }
+}
+
+
+
+
+# **读取 KEGG 术语集**
+gmt_kegg <- read.gmt("c2.cp.kegg.v7.4.symbols.gmt")
+
+# **转换 gmt_kegg 的 SYMBOL 为 ENTREZID**
+gmt_kegg$ENTREZID <- mapIds(
+  org.Hs.eg.db,
+  keys = gmt_kegg$gene,
+  column = "ENTREZID",
+  keytype = "SYMBOL",
+  multiVals = "first"
+)
+
+# 移除无法映射的基因
+gmt_kegg <- gmt_kegg[!is.na(gmt_kegg$ENTREZID), ]
+
+# 重新命名列以匹配 `TERM2GENE` 格式
+gmt_kegg <- gmt_kegg[, c("term", "ENTREZID")]
+colnames(gmt_kegg) <- c("TERM", "GENE")
+
+# **执行 GSEA (KEGG)**
+kk_kegg <- tryCatch({
+  GSEA(logFC, TERM2GENE=gmt_kegg, pvalueCutoff=1)
+}, error = function(e) {
+  print("KEGG GSEA 失败！请检查数据格式")
+  return(NULL)
+})
+
+if (!is.null(kk_kegg)) {
+  kkTab_kegg <- as.data.frame(kk_kegg) %>% dplyr::filter(pvalue < 0.05)
+  write.table(kkTab_kegg, file="GSEA_result_KEGG.txt", sep="\t", quote=F, row.names=F)
+  
+  # **绘制 KEGG 富集分析图**
+  if (nrow(kkTab_kegg) >= 5) {
+    showTerm <- row.names(kkTab_kegg)[1:5]
+  } else {
+    showTerm <- row.names(kkTab_kegg)
+  }
+  
+  pdf(file="GSEA-KEGG.pdf", width=10, height=8)
+  print(gseaplot2(kk_kegg, showTerm, base_size=8, title="KEGG GSEA"))
+  dev.off()
+}
+
+print("GSEA 分析完成！")

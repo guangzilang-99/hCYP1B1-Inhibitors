@@ -1,0 +1,140 @@
+Name,Category,CategoryID,GO,Description,PARENT_GO,LogP,Enrichment,Z-score,#TotalGeneInLibrary,#GeneInGO,#GeneInHitList,#GeneInGOAndHitList,%InGO,STDV %InGO,GeneID,Hits,Log(q-value)
+MyList,WikiPathways,27,WP2882,Nuclear receptors meta pathway,,-12,31,17,30284,314,31,10,32,8.4,218|1543|1545|5465|5743|8140|8856|8878|54658|57491,ALDH3A1|CYP1A1|CYP1B1|PPARA|PTGS2|SLC7A5|NR1I2|SQSTM1|UGT1A1|AHRR,-8
+MyList,WikiPathways,27,WP2873,Aryl hydrocarbon receptor pathway,,-11,1.3e+02,28,30284,45,31,6,19,7.1,218|1543|1545|8140|54658|57491,ALDH3A1|CYP1A1|CYP1B1|SLC7A5|UGT1A1|AHRR,-7.2
+MyList,GO Biological Processes,19,GO:0006805,xenobiotic metabolic process,19_GO:0050896 response to stimulus,-8.5,46,16,30284,127,31,6,19,7.1,218|1543|1545|8856|54658|57491,ALDH3A1|CYP1A1|CYP1B1|NR1I2|UGT1A1|AHRR,-4.6
+MyList,GO Biological Processes,19,GO:0009410,response to xenobiotic stimulus,19_GO:0050896 response to stimulus,-8,18,11,30284,437,31,8,26,7.9,218|1543|1545|4862|5743|8856|54658|57491,ALDH3A1|CYP1A1|CYP1B1|NPAS2|PTGS2|NR1I2|UGT1A1|AHRR,-4.2
+MyList,Reactome Gene Sets,6,R-HSA-556833,Metabolism of lipids,,-7.7,13,10,30284,691,31,9,29,8.2,1543|1545|3032|4862|5465|5743|8605|57491|64781,CYP1A1|CYP1B1|HADHB|NPAS2|PPARA|PTGS2|PLA2G4C|AHRR|CERK,-4
+MyList,GO Biological Processes,19,GO:0032787,monocarboxylic acid metabolic process,19_GO:0009987 cellular process,-7.4,15,10,30284,525,31,8,26,7.9,1543|1545|3032|5465|5743|8605|54658|80201,CYP1A1|CYP1B1|HADHB|PPARA|PTGS2|PLA2G4C|UGT1A1|HKDC1,-3.8
+MyList,GO Biological Processes,19,GO:0071466,cellular response to xenobiotic stimulus,19_GO:0050896 response to stimulus,-7.3,30,13,30284,197,31,6,19,7.1,218|1543|1545|8856|54658|57491,ALDH3A1|CYP1A1|CYP1B1|NR1I2|UGT1A1|AHRR,-3.8
+MyList,WikiPathways,27,WP2586,Aryl hydrocarbon receptor pathway,,-6.8,85,18,30284,46,31,4,13,6,1543|1545|5743|57491,CYP1A1|CYP1B1|PTGS2|AHRR,-3.4
+MyList,KEGG Pathway,24,hsa04913,Ovarian steroidogenesis,,-6.6,75,17,30284,52,31,4,13,6,1543|1545|5743|8605,CYP1A1|CYP1B1|PTGS2|PLA2G4C,-3.2
+MyList,WikiPathways,27,WP2881,Estrogen receptor pathway,,-6.6,2.3e+02,26,30284,13,31,3,9.7,5.3,1543|1545|5465,CYP1A1|CYP1B1|PPARA,-3.2
+MyList,GO Biological Processes,19,GO:0019369,arachidonate metabolic process,19_GO:0009987 cellular process,-6.4,66,16,30284,59,31,4,13,6,1543|1545|5743|8605,CYP1A1|CYP1B1|PTGS2|PLA2G4C,-3.1
+MyList,GO Biological Processes,19,GO:0120254,olefinic compound metabolic process,19_GO:0009987 cellular process,-6.4,33,12,30284,148,31,5,16,6.6,1543|1545|5743|8605|195814,CYP1A1|CYP1B1|PTGS2|PLA2G4C|SDR16C5,-3.1
+MyList,GO Biological Processes,19,GO:0007584,response to nutrient,19_GO:0050896 response to stimulus,-6.2,30,12,30284,161,31,5,16,6.6,1543|1545|5465|5743|54658,CYP1A1|CYP1B1|PPARA|PTGS2|UGT1A1,-3
+MyList,GO Biological Processes,19,GO:0006081,aldehyde metabolic process,19_GO:0009987 cellular process,-6.2,57,15,30284,68,31,4,13,6,218|1545|132158|195814,ALDH3A1|CYP1B1|GLYCTK|SDR16C5,-3
+MyList,WikiPathways,27,WP697,Estrogen metabolism,,-6.1,1.6e+02,22,30284,18,31,3,9.7,5.3,1543|1545|54658,CYP1A1|CYP1B1|UGT1A1,-3
+MyList,KEGG Pathway,24,hsa05204,Chemical carcinogenesis - DNA adducts,,-6.1,55,15,30284,71,31,4,13,6,1543|1545|5743|54658,CYP1A1|CYP1B1|PTGS2|UGT1A1,-3
+MyList,GO Biological Processes,19,GO:0006631,fatty acid metabolic process,19_GO:0009987 cellular process,-6.1,18,9.9,30284,327,31,6,19,7.1,1543|1545|3032|5465|5743|8605,CYP1A1|CYP1B1|HADHB|PPARA|PTGS2|PLA2G4C,-3
+MyList,GO Biological Processes,19,GO:0019752,carboxylic acid metabolic process,19_GO:0009987 cellular process,-6,10,8.2,30284,783,31,8,26,7.9,1543|1545|3032|5465|5743|8605|54658|80201,CYP1A1|CYP1B1|HADHB|PPARA|PTGS2|PLA2G4C|UGT1A1|HKDC1,-3
+MyList,GO Biological Processes,19,GO:0071396,cellular response to lipid,19_GO:0050896 response to stimulus,-6,13,8.7,30284,546,31,7,23,7.5,1545|3032|5465|5743|7477|8140|54658,CYP1B1|HADHB|PPARA|PTGS2|WNT7B|SLC7A5|UGT1A1,-2.9
+MyList,KEGG Pathway,24,hsa00980,Metabolism of xenobiotics by cytochrome P450,,-5.9,49,14,30284,79,31,4,13,6,218|1543|1545|54658,ALDH3A1|CYP1A1|CYP1B1|UGT1A1,-2.9
+MyList,GO Biological Processes,19,GO:0001523,retinoid metabolic process,19_GO:0009987 cellular process,-5.8,47,13,30284,83,31,4,13,6,1543|1545|54658|195814,CYP1A1|CYP1B1|UGT1A1|SDR16C5,-2.8
+MyList,GO Biological Processes,19,GO:0016101,diterpenoid metabolic process,19_GO:0009987 cellular process,-5.7,44,13,30284,88,31,4,13,6,1543|1545|54658|195814,CYP1A1|CYP1B1|UGT1A1|SDR16C5,-2.7
+MyList,GO Biological Processes,19,GO:0042178,xenobiotic catabolic process,19_GO:0050896 response to stimulus,-5.7,1.2e+02,19,30284,25,31,3,9.7,5.3,1543|8856|54658,CYP1A1|NR1I2|UGT1A1,-2.7
+MyList,KEGG Pathway,24,hsa05207,Chemical carcinogenesis - receptor activation,,-5.6,23,10,30284,215,31,5,16,6.6,1543|1545|5465|6654|54658,CYP1A1|CYP1B1|PPARA|SOS1|UGT1A1,-2.6
+MyList,Reactome Gene Sets,6,R-HSA-1989781,PPARA activates gene expression,,-5.6,41,12,30284,96,31,4,13,6,1543|4862|5465|57491,CYP1A1|NPAS2|PPARA|AHRR,-2.6
+MyList,Reactome Gene Sets,6,R-HSA-400206,Regulation of lipid metabolism by PPARalpha,,-5.5,40,12,30284,97,31,4,13,6,1543|4862|5465|57491,CYP1A1|NPAS2|PPARA|AHRR,-2.6
+MyList,GO Biological Processes,19,GO:0006721,terpenoid metabolic process,19_GO:0009987 cellular process,-5.5,39,12,30284,99,31,4,13,6,1543|1545|54658|195814,CYP1A1|CYP1B1|UGT1A1|SDR16C5,-2.6
+MyList,GO Biological Processes,19,GO:0033559,unsaturated fatty acid metabolic process,19_GO:0009987 cellular process,-5.4,38,12,30284,104,31,4,13,6,1543|1545|5743|8605,CYP1A1|CYP1B1|PTGS2|PLA2G4C,-2.5
+MyList,Reactome Gene Sets,6,R-HSA-211945,Phase I - Functionalization of compounds,,-5.4,38,12,30284,104,31,4,13,6,218|1543|1545|57491,ALDH3A1|CYP1A1|CYP1B1|AHRR,-2.5
+MyList,GO Biological Processes,19,GO:0046209,nitric oxide metabolic process,19_GO:0009987 cellular process,-5.4,95,17,30284,31,31,3,9.7,5.3,1543|1545|5465,CYP1A1|CYP1B1|PPARA,-2.5
+MyList,GO Biological Processes,19,GO:0001676,long-chain fatty acid metabolic process,19_GO:0009987 cellular process,-5.3,35,12,30284,111,31,4,13,6,1543|1545|5743|8605,CYP1A1|CYP1B1|PTGS2|PLA2G4C,-2.5
+MyList,GO Biological Processes,19,GO:0048514,blood vessel morphogenesis,19_GO:0032502 developmental process,-5.3,13,8.3,30284,441,31,6,19,7.1,1545|2069|2838|5743|6654|7477,CYP1B1|EREG|GPR15|PTGS2|SOS1|WNT7B,-2.5
+MyList,GO Biological Processes,19,GO:2001057,reactive nitrogen species metabolic process,19_GO:0009987 cellular process,-5.3,89,16,30284,33,31,3,9.7,5.3,1543|1545|5465,CYP1A1|CYP1B1|PPARA,-2.5
+MyList,GO Biological Processes,19,GO:0006690,icosanoid metabolic process,19_GO:0009987 cellular process,-5.2,34,11,30284,115,31,4,13,6,1543|1545|5743|8605,CYP1A1|CYP1B1|PTGS2|PLA2G4C,-2.4
+MyList,GO Biological Processes,19,GO:0006720,isoprenoid metabolic process,19_GO:0009987 cellular process,-5.2,33,11,30284,120,31,4,13,6,1543|1545|54658|195814,CYP1A1|CYP1B1|UGT1A1|SDR16C5,-2.4
+MyList,GO Biological Processes,19,GO:0008210,estrogen metabolic process,19_GO:0065007 biological regulation,-5.1,75,15,30284,39,31,3,9.7,5.3,1543|1545|54658,CYP1A1|CYP1B1|UGT1A1,-2.3
+MyList,GO Biological Processes,19,GO:0048545,response to steroid hormone,19_GO:0050896 response to stimulus,-5,17,8.8,30284,284,31,5,16,6.6,1545|5465|5743|7477|54658,CYP1B1|PPARA|PTGS2|WNT7B|UGT1A1,-2.2
+MyList,GO Biological Processes,19,GO:0051384,response to glucocorticoid,19_GO:0050896 response to stimulus,-5,29,10,30284,136,31,4,13,6,1545|5743|7477|54658,CYP1B1|PTGS2|WNT7B|UGT1A1,-2.2
+MyList,GO Biological Processes,19,GO:0031667,response to nutrient levels,19_GO:0050896 response to stimulus,-4.9,11,7.6,30284,510,31,6,19,7.1,1543|1545|5465|5743|8140|54658,CYP1A1|CYP1B1|PPARA|PTGS2|SLC7A5|UGT1A1,-2.2
+MyList,GO Biological Processes,19,GO:0001568,blood vessel development,19_GO:0032502 developmental process,-4.8,11,7.4,30284,534,31,6,19,7.1,1545|2069|2838|5743|6654|7477,CYP1B1|EREG|GPR15|PTGS2|SOS1|WNT7B,-2.1
+MyList,GO Biological Processes,19,GO:0010817,regulation of hormone levels,19_GO:0065007 biological regulation,-4.8,11,7.3,30284,548,31,6,19,7.1,1543|1545|6520|8140|54658|195814,CYP1A1|CYP1B1|SLC3A2|SLC7A5|UGT1A1|SDR16C5,-2
+MyList,GO Biological Processes,19,GO:0001944,vasculature development,19_GO:0032502 developmental process,-4.7,11,7.3,30284,556,31,6,19,7.1,1545|2069|2838|5743|6654|7477,CYP1B1|EREG|GPR15|PTGS2|SOS1|WNT7B,-2
+MyList,GO Biological Processes,19,GO:0031960,response to corticosteroid,19_GO:0050896 response to stimulus,-4.7,25,9.6,30284,157,31,4,13,6,1545|5743|7477|54658,CYP1B1|PTGS2|WNT7B|UGT1A1,-2
+MyList,KEGG Pathway,24,hsa04150,mTOR signaling pathway,,-4.7,25,9.6,30284,158,31,4,13,6,6520|6654|7477|8140,SLC3A2|SOS1|WNT7B|SLC7A5,-2
+MyList,GO Biological Processes,19,GO:0042572,retinol metabolic process,19_GO:0065007 biological regulation,-4.7,56,13,30284,52,31,3,9.7,5.3,1543|1545|195814,CYP1A1|CYP1B1|SDR16C5,-2
+MyList,Reactome Gene Sets,6,R-HSA-8978868,Fatty acid metabolism,,-4.7,24,9.4,30284,162,31,4,13,6,1543|1545|3032|5743,CYP1A1|CYP1B1|HADHB|PTGS2,-2
+MyList,GO Biological Processes,19,GO:0032496,response to lipopolysaccharide,19_GO:0044419 biological process involved in interspecies interaction between organisms,-4.6,14,7.9,30284,339,31,5,16,6.6,1543|3032|5743|8140|54658,CYP1A1|HADHB|PTGS2|SLC7A5|UGT1A1,-2
+MyList,Reactome Gene Sets,6,R-HSA-2142753,Arachidonate metabolism,,-4.6,52,12,30284,56,31,3,9.7,5.3,1543|1545|5743,CYP1A1|CYP1B1|PTGS2,-1.9
+MyList,GO Biological Processes,19,GO:0002237,response to molecule of bacterial origin,19_GO:0044419 biological process involved in interspecies interaction between organisms,-4.5,14,7.7,30284,361,31,5,16,6.6,1543|3032|5743|8140|54658,CYP1A1|HADHB|PTGS2|SLC7A5|UGT1A1,-1.9
+MyList,KEGG Pathway,24,hsa00140,Steroid hormone biosynthesis,,-4.4,47,12,30284,63,31,3,9.7,5.3,1543|1545|54658,CYP1A1|CYP1B1|UGT1A1,-1.8
+MyList,Reactome Gene Sets,6,R-HSA-211897,Cytochrome P450 - arranged by substrate type,,-4.4,45,11,30284,65,31,3,9.7,5.3,1543|1545|57491,CYP1A1|CYP1B1|AHRR,-1.8
+MyList,KEGG Pathway,24,hsa00830,Retinol metabolism,,-4.3,43,11,30284,68,31,3,9.7,5.3,1543|54658|195814,CYP1A1|UGT1A1|SDR16C5,-1.7
+MyList,GO Biological Processes,19,GO:0042445,hormone metabolic process,19_GO:0065007 biological regulation,-4.3,19,8.3,30284,205,31,4,13,6,1543|1545|54658|195814,CYP1A1|CYP1B1|UGT1A1|SDR16C5,-1.6
+MyList,GO Biological Processes,19,GO:0035239,tube morphogenesis,19_GO:0032502 developmental process,-4.2,8.4,6.4,30284,694,31,6,19,7.1,1545|2069|2838|5743|6654|7477,CYP1B1|EREG|GPR15|PTGS2|SOS1|WNT7B,-1.6
+MyList,Reactome Gene Sets,6,R-HSA-211859,Biological oxidations,,-4.2,18,8.1,30284,215,31,4,13,6,218|1543|1545|57491,ALDH3A1|CYP1A1|CYP1B1|AHRR,-1.6
+MyList,GO Biological Processes,19,GO:0048732,gland development,19_GO:0032502 developmental process,-4.2,11,6.9,30284,428,31,5,16,6.6,1543|1545|7477|8140|54658,CYP1A1|CYP1B1|WNT7B|SLC7A5|UGT1A1,-1.6
+MyList,GO Biological Processes,19,GO:0043434,response to peptide hormone,19_GO:0050896 response to stimulus,-4.1,11,6.9,30284,431,31,5,16,6.6,1545|2069|5465|5743|6654,CYP1B1|EREG|PPARA|PTGS2|SOS1,-1.6
+MyList,WikiPathways,27,WP5087,Pleural mesothelioma,,-4.1,11,6.8,30284,439,31,5,16,6.6,6520|6654|7477|8140|64840,SLC3A2|SOS1|WNT7B|SLC7A5|PORCN,-1.5
+MyList,GO Biological Processes,19,GO:0071407,cellular response to organic cyclic compound,19_GO:0050896 response to stimulus,-4,10,6.6,30284,472,31,5,16,6.6,1543|1545|5465|5743|54658,CYP1A1|CYP1B1|PPARA|PTGS2|UGT1A1,-1.4
+MyList,GO Biological Processes,19,GO:0034308,primary alcohol metabolic process,19_GO:0009987 cellular process,-3.9,32,9.4,30284,93,31,3,9.7,5.3,1543|1545|195814,CYP1A1|CYP1B1|SDR16C5,-1.4
+MyList,GO Biological Processes,19,GO:0008202,steroid metabolic process,19_GO:0009987 cellular process,-3.9,15,7.3,30284,257,31,4,13,6,1543|1545|8856|54658,CYP1A1|CYP1B1|NR1I2|UGT1A1,-1.3
+MyList,GO Biological Processes,19,GO:0042633,hair cycle,19_GO:0032501 multicellular organismal process,-3.9,30,9.2,30284,98,31,3,9.7,5.3,5743|6654|7053,PTGS2|SOS1|TGM3,-1.3
+MyList,GO Biological Processes,19,GO:0042303,molting cycle,19_GO:0032501 multicellular organismal process,-3.9,30,9.2,30284,98,31,3,9.7,5.3,5743|6654|7053,PTGS2|SOS1|TGM3,-1.3
+MyList,GO Biological Processes,19,GO:0048511,rhythmic process,19_GO:0048511 rhythmic process,-3.8,14,7,30284,275,31,4,13,6,1545|2069|4862|5465,CYP1B1|EREG|NPAS2|PPARA,-1.2
+MyList,GO Biological Processes,19,GO:0019217,regulation of fatty acid metabolic process,19_GO:0050789 regulation of biological process,-3.7,27,8.7,30284,109,31,3,9.7,5.3,5465|5743|54658,PPARA|PTGS2|UGT1A1,-1.2
+MyList,WikiPathways,27,WP4659,Gastrin signaling,,-3.7,25,8.4,30284,115,31,3,9.7,5.3,5743|6654|7032,PTGS2|SOS1|TFF2,-1.1
+MyList,GO Biological Processes,19,GO:0032355,response to estradiol,19_GO:0050896 response to stimulus,-3.6,24,8.2,30284,120,31,3,9.7,5.3,1545|5743|54658,CYP1B1|PTGS2|UGT1A1,-1.1
+MyList,GO Biological Processes,19,GO:0045834,positive regulation of lipid metabolic process,19_GO:0048518 positive regulation of biological process,-3.5,22,7.8,30284,133,31,3,9.7,5.3,1917|5465|5743,EEF1A2|PPARA|PTGS2,-0.96
+MyList,GO Biological Processes,19,GO:0001889,liver development,19_GO:0032502 developmental process,-3.5,22,7.8,30284,134,31,3,9.7,5.3,1543|8140|54658,CYP1A1|SLC7A5|UGT1A1,-0.95
+MyList,GO Biological Processes,19,GO:0061008,hepaticobiliary system development,19_GO:0032502 developmental process,-3.4,21,7.7,30284,137,31,3,9.7,5.3,1543|8140|54658,CYP1A1|SLC7A5|UGT1A1,-0.93
+MyList,GO Biological Processes,19,GO:0008544,epidermis development,19_GO:0032502 developmental process,-3.4,12,6.2,30284,339,31,4,13,6,2069|5465|6654|7053,EREG|PPARA|SOS1|TGM3,-0.93
+MyList,GO Biological Processes,19,GO:0019216,regulation of lipid metabolic process,19_GO:0050789 regulation of biological process,-3.4,11,6.2,30284,343,31,4,13,6,1917|5465|5743|54658,EEF1A2|PPARA|PTGS2|UGT1A1,-0.91
+MyList,WikiPathways,27,WP2884,NRF2 pathway,,-3.4,21,7.5,30284,141,31,3,9.7,5.3,218|8878|54658,ALDH3A1|SQSTM1|UGT1A1,-0.91
+MyList,GO Biological Processes,19,GO:0001525,angiogenesis,19_GO:0032502 developmental process,-3.4,11,6.2,30284,347,31,4,13,6,1545|2069|2838|5743,CYP1B1|EREG|GPR15|PTGS2,-0.91
+MyList,GO Biological Processes,19,GO:0070482,response to oxygen levels,19_GO:0050896 response to stimulus,-3.4,11,6.2,30284,347,31,4,13,6,1543|5465|5743|8140,CYP1A1|PPARA|PTGS2|SLC7A5,-0.91
+MyList,GO Biological Processes,19,GO:0010565,regulation of ketone metabolic process,19_GO:0050789 regulation of biological process,-3.4,20,7.5,30284,143,31,3,9.7,5.3,5465|5743|54658,PPARA|PTGS2|UGT1A1,-0.91
+MyList,GO Biological Processes,19,GO:0043010,camera-type eye development,19_GO:0032502 developmental process,-3.3,11,6.1,30284,355,31,4,13,6,1543|1545|6654|7477,CYP1A1|CYP1B1|SOS1|WNT7B,-0.89
+MyList,GO Biological Processes,19,GO:0071383,cellular response to steroid hormone stimulus,19_GO:0050896 response to stimulus,-3.3,19,7.2,30284,153,31,3,9.7,5.3,1545|5465|54658,CYP1B1|PPARA|UGT1A1,-0.84
+MyList,GO Biological Processes,19,GO:0009746,response to hexose,19_GO:0050896 response to stimulus,-3.2,19,7.1,30284,158,31,3,9.7,5.3,5465|5743|10723,PPARA|PTGS2|SLC12A7,-0.8
+MyList,GO Biological Processes,19,GO:0019318,hexose metabolic process,19_GO:0009987 cellular process,-3.2,18,7,30284,161,31,3,9.7,5.3,5465|80201|132158,PPARA|HKDC1|GLYCTK,-0.79
+MyList,GO Biological Processes,19,GO:0098739,import across plasma membrane,19_GO:0051179 localization,-3.2,18,6.9,30284,165,31,3,9.7,5.3,6520|8140|10723,SLC3A2|SLC7A5|SLC12A7,-0.77
+MyList,GO Biological Processes,19,GO:0034284,response to monosaccharide,19_GO:0050896 response to stimulus,-3.2,18,6.9,30284,165,31,3,9.7,5.3,5465|5743|10723,PPARA|PTGS2|SLC12A7,-0.77
+MyList,GO Biological Processes,19,GO:0051147,regulation of muscle cell differentiation,19_GO:0032502 developmental process,-3.2,18,6.9,30284,167,31,3,9.7,5.3,2069|5465|93145,EREG|PPARA|OLFM2,-0.76
+MyList,GO Biological Processes,19,GO:0030258,lipid modification,19_GO:0009987 cellular process,-3.2,18,6.9,30284,167,31,3,9.7,5.3,1543|3032|64840,CYP1A1|HADHB|PORCN,-0.76
+MyList,GO Biological Processes,19,GO:0001654,eye development,19_GO:0032502 developmental process,-3.1,9.7,5.6,30284,403,31,4,13,6,1543|1545|6654|7477,CYP1A1|CYP1B1|SOS1|WNT7B,-0.72
+MyList,GO Biological Processes,19,GO:0150063,visual system development,19_GO:0032502 developmental process,-3.1,9.6,5.6,30284,407,31,4,13,6,1543|1545|6654|7477,CYP1A1|CYP1B1|SOS1|WNT7B,-0.71
+MyList,GO Biological Processes,19,GO:0009617,response to bacterium,19_GO:0044419 biological process involved in interspecies interaction between organisms,-3.1,6.7,5,30284,726,31,5,16,6.6,1543|3032|5743|8140|54658,CYP1A1|HADHB|PTGS2|SLC7A5|UGT1A1,-0.7
+MyList,GO Biological Processes,19,GO:0048880,sensory system development,19_GO:0032502 developmental process,-3.1,9.4,5.5,30284,414,31,4,13,6,1543|1545|6654|7477,CYP1A1|CYP1B1|SOS1|WNT7B,-0.69
+MyList,GO Biological Processes,19,GO:0005996,monosaccharide metabolic process,19_GO:0009987 cellular process,-3.1,16,6.5,30284,184,31,3,9.7,5.3,5465|80201|132158,PPARA|HKDC1|GLYCTK,-0.67
+MyList,WikiPathways,27,WP702,Metapathway biotransformation Phase I and II,,-3.1,16,6.5,30284,184,31,3,9.7,5.3,1543|1545|54658,CYP1A1|CYP1B1|UGT1A1,-0.67
+MyList,GO Biological Processes,19,GO:0009743,response to carbohydrate,19_GO:0050896 response to stimulus,-3,15,6.4,30284,190,31,3,9.7,5.3,5465|5743|10723,PPARA|PTGS2|SLC12A7,-0.63
+MyList,GO Biological Processes,19,GO:0030522,intracellular receptor signaling pathway,19_GO:0050896 response to stimulus,-3,15,6.4,30284,191,31,3,9.7,5.3,5465|8856|57491,PPARA|NR1I2|AHRR,-0.63
+MyList,GO Biological Processes,19,GO:0044703,multi-organism reproductive process,19_GO:0022414 reproductive process,-3,15,6.3,30284,195,31,3,9.7,5.3,1543|5743|8605,CYP1A1|PTGS2|PLA2G4C,-0.61
+MyList,GO Biological Processes,19,GO:0005975,carbohydrate metabolic process,19_GO:0009987 cellular process,-3,8.8,5.3,30284,445,31,4,13,6,5465|6520|80201|132158,PPARA|SLC3A2|HKDC1|GLYCTK,-0.61
+MyList,GO Biological Processes,19,GO:0044706,multi-multicellular organism process,19_GO:0032501 multicellular organismal process,-2.9,14,6.1,30284,203,31,3,9.7,5.3,1543|5743|8605,CYP1A1|PTGS2|PLA2G4C,-0.57
+MyList,GO Biological Processes,19,GO:0071222,cellular response to lipopolysaccharide,19_GO:0044419 biological process involved in interspecies interaction between organisms,-2.9,14,6,30284,212,31,3,9.7,5.3,3032|5743|8140,HADHB|PTGS2|SLC7A5,-0.52
+MyList,GO Biological Processes,19,GO:0071219,cellular response to molecule of bacterial origin,19_GO:0044419 biological process involved in interspecies interaction between organisms,-2.8,13,5.8,30284,226,31,3,9.7,5.3,3032|5743|8140,HADHB|PTGS2|SLC7A5,-0.44
+MyList,KEGG Pathway,24,hsa05208,Chemical carcinogenesis - reactive oxygen species,,-2.8,13,5.8,30284,227,31,3,9.7,5.3,1543|1545|6654,CYP1A1|CYP1B1|SOS1,-0.44
+MyList,GO Biological Processes,19,GO:0042594,response to starvation,19_GO:0050896 response to stimulus,-2.8,13,5.7,30284,232,31,3,9.7,5.3,5465|8140|54658,PPARA|SLC7A5|UGT1A1,-0.42
+MyList,GO Biological Processes,19,GO:0001819,positive regulation of cytokine production,19_GO:0032501 multicellular organismal process,-2.7,7.6,4.8,30284,514,31,4,13,6,1545|2069|5743|8140,CYP1B1|EREG|PTGS2|SLC7A5,-0.4
+MyList,GO Biological Processes,19,GO:0071216,cellular response to biotic stimulus,19_GO:0050896 response to stimulus,-2.7,12,5.4,30284,252,31,3,9.7,5.3,3032|5743|8140,HADHB|PTGS2|SLC7A5,-0.33
+MyList,GO Biological Processes,19,GO:0009636,response to toxic substance,19_GO:0050896 response to stimulus,-2.7,12,5.4,30284,253,31,3,9.7,5.3,1543|1545|5743,CYP1A1|CYP1B1|PTGS2,-0.33
+MyList,Reactome Gene Sets,6,R-HSA-5683057,MAPK family signaling cascades,,-2.6,11,5.4,30284,257,31,3,9.7,5.3,2069|6654|8555,EREG|SOS1|CDC14B,-0.31
+MyList,GO Biological Processes,19,GO:0051347,positive regulation of transferase activity,19_GO:0065007 biological regulation,-2.6,11,5.3,30284,264,31,3,9.7,5.3,1917|2069|8555,EEF1A2|EREG|CDC14B,-0.28
+MyList,GO Biological Processes,19,GO:0032870,cellular response to hormone stimulus,19_GO:0050896 response to stimulus,-2.6,7,4.6,30284,562,31,4,13,6,1545|5465|6654|54658,CYP1B1|PPARA|SOS1|UGT1A1,-0.28
+MyList,GO Biological Processes,19,GO:0043065,positive regulation of apoptotic process,19_GO:0048518 positive regulation of biological process,-2.6,6.9,4.5,30284,569,31,4,13,6,1545|1917|5743|8878,CYP1B1|EEF1A2|PTGS2|SQSTM1,-0.27
+MyList,GO Biological Processes,19,GO:0090068,positive regulation of cell cycle process,19_GO:0048518 positive regulation of biological process,-2.6,11,5.2,30284,273,31,3,9.7,5.3,1543|2069|8555,CYP1A1|EREG|CDC14B,-0.25
+MyList,GO Biological Processes,19,GO:0097305,response to alcohol,19_GO:0050896 response to stimulus,-2.6,11,5.1,30284,275,31,3,9.7,5.3,1545|5465|54658,CYP1B1|PPARA|UGT1A1,-0.25
+MyList,GO Biological Processes,19,GO:0043068,positive regulation of programmed cell death,19_GO:0048518 positive regulation of biological process,-2.5,6.7,4.4,30284,586,31,4,13,6,1545|1917|5743|8878,CYP1B1|EEF1A2|PTGS2|SQSTM1,-0.23
+MyList,GO Biological Processes,19,GO:0043588,skin development,19_GO:0032502 developmental process,-2.5,10,5.1,30284,283,31,3,9.7,5.3,2069|6654|7053,EREG|SOS1|TGM3,-0.22
+MyList,GO Biological Processes,19,GO:0008610,lipid biosynthetic process,19_GO:0009987 cellular process,-2.5,6.5,4.4,30284,602,31,4,13,6,1543|5743|8605|64781,CYP1A1|PTGS2|PLA2G4C|CERK,-0.2
+MyList,GO Biological Processes,19,GO:0007423,sensory organ development,19_GO:0032502 developmental process,-2.5,6.4,4.3,30284,609,31,4,13,6,1543|1545|6654|7477,CYP1A1|CYP1B1|SOS1|WNT7B,-0.19
+MyList,GO Biological Processes,19,GO:0051054,positive regulation of DNA metabolic process,19_GO:0048518 positive regulation of biological process,-2.5,9.9,4.9,30284,296,31,3,9.7,5.3,1545|2069|4862,CYP1B1|EREG|NPAS2,-0.18
+MyList,KEGG Pathway,24,hsa04010,MAPK signaling pathway,,-2.5,9.8,4.9,30284,300,31,3,9.7,5.3,2069|6654|8605,EREG|SOS1|PLA2G4C,-0.17
+MyList,GO Biological Processes,19,GO:0016042,lipid catabolic process,19_GO:0009987 cellular process,-2.5,9.8,4.9,30284,300,31,3,9.7,5.3,1545|3032|8605,CYP1B1|HADHB|PLA2G4C,-0.17
+MyList,GO Biological Processes,19,GO:0046942,carboxylic acid transport,19_GO:0051179 localization,-2.4,9.6,4.8,30284,304,31,3,9.7,5.3,5743|6520|8140,PTGS2|SLC3A2|SLC7A5,-0.16
+MyList,GO Biological Processes,19,GO:0015849,organic acid transport,19_GO:0051179 localization,-2.4,9.6,4.8,30284,305,31,3,9.7,5.3,5743|6520|8140,PTGS2|SLC3A2|SLC7A5,-0.16
+MyList,GO Biological Processes,19,GO:0001666,response to hypoxia,19_GO:0050896 response to stimulus,-2.4,9.6,4.8,30284,305,31,3,9.7,5.3,1543|5465|5743,CYP1A1|PPARA|PTGS2,-0.16
+MyList,GO Biological Processes,19,GO:1901699,cellular response to nitrogen compound,19_GO:0050896 response to stimulus,-2.4,6.2,4.2,30284,633,31,4,13,6,1545|5743|6654|8140,CYP1B1|PTGS2|SOS1|SLC7A5,-0.15
+MyList,GO Biological Processes,19,GO:0048871,multicellular organismal-level homeostasis,19_GO:0042592 homeostatic process,-2.4,6.1,4.2,30284,638,31,4,13,6,5743|6654|7032|8878,PTGS2|SOS1|TFF2|SQSTM1,-0.14
+MyList,KEGG Pathway,24,hsa05206,MicroRNAs in cancer,,-2.4,9.4,4.8,30284,312,31,3,9.7,5.3,1545|5743|6654,CYP1B1|PTGS2|SOS1,-0.14
+MyList,GO Biological Processes,19,GO:0006066,alcohol metabolic process,19_GO:0009987 cellular process,-2.4,9.3,4.8,30284,314,31,3,9.7,5.3,1543|1545|195814,CYP1A1|CYP1B1|SDR16C5,-0.14
+MyList,GO Biological Processes,19,GO:0030855,epithelial cell differentiation,19_GO:0032502 developmental process,-2.4,6,4.2,30284,646,31,4,13,6,1543|2069|7053|7477,CYP1A1|EREG|TGM3|WNT7B,-0.14
+MyList,Reactome Gene Sets,6,R-HSA-372790,Signaling by GPCR,,-2.4,6,4.1,30284,648,31,4,13,6,2838|6654|7433|7477,GPR15|SOS1|VIPR1|WNT7B,-0.13
+MyList,GO Biological Processes,19,GO:0036293,response to decreased oxygen levels,19_GO:0050896 response to stimulus,-2.4,9.2,4.7,30284,319,31,3,9.7,5.3,1543|5465|5743,CYP1A1|PPARA|PTGS2,-0.13
+MyList,KEGG Pathway,24,hsa05165,Human papillomavirus infection,,-2.3,8.8,4.6,30284,333,31,3,9.7,5.3,5743|6654|7477,PTGS2|SOS1|WNT7B,-0.084
+MyList,GO Biological Processes,19,GO:0045787,positive regulation of cell cycle,19_GO:0048518 positive regulation of biological process,-2.3,8.5,4.5,30284,343,31,3,9.7,5.3,1543|2069|8555,CYP1A1|EREG|CDC14B,-0.052
+MyList,Reactome Gene Sets,6,R-HSA-2262752,Cellular responses to stress,,-2.3,5.7,4,30284,690,31,4,13,6,4862|5465|8878|11015,NPAS2|PPARA|SQSTM1|KDELR3,-0.052
+MyList,GO Biological Processes,19,GO:0062012,regulation of small molecule metabolic process,19_GO:0050789 regulation of biological process,-2.3,8.4,4.4,30284,350,31,3,9.7,5.3,5465|5743|54658,PPARA|PTGS2|UGT1A1,-0.034
+MyList,Reactome Gene Sets,6,R-HSA-5663202,Diseases of signal transduction by growth factor receptors and second messengers,,-2.3,8.3,4.4,30284,354,31,3,9.7,5.3,2069|6654|8878,EREG|SOS1|SQSTM1,-0.024
+MyList,GO Biological Processes,19,GO:0044282,small molecule catabolic process,19_GO:0009987 cellular process,-2.2,8.3,4.4,30284,355,31,3,9.7,5.3,1543|3032|132158,CYP1A1|HADHB|GLYCTK,-0.023
+MyList,GO Biological Processes,19,GO:0010506,regulation of autophagy,19_GO:0050789 regulation of biological process,-2.2,8.2,4.4,30284,359,31,3,9.7,5.3,1917|8140|8878,EEF1A2|SLC7A5|SQSTM1,-0.013
+MyList,GO Biological Processes,19,GO:0008283,cell population proliferation,19_GO:0009987 cellular process,-2.2,5.4,3.9,30284,718,31,4,13,6,2069|7477|8878|195814,EREG|WNT7B|SQSTM1|SDR16C5,-0.0076
+MyList,Reactome Gene Sets,6,R-HSA-449147,Signaling by Interleukins,,-2.2,7.7,4.2,30284,381,31,3,9.7,5.3,5743|6654|8878,PTGS2|SOS1|SQSTM1,0
+MyList,GO Biological Processes,19,GO:0071345,cellular response to cytokine stimulus,19_GO:0050896 response to stimulus,-2.1,5,3.6,30284,787,31,4,13,6,1545|2069|6654|7032,CYP1B1|EREG|SOS1|TFF2,0
+MyList,Reactome Gene Sets,6,R-HSA-8953897,Cellular responses to stimuli,,-2.1,5,3.6,30284,788,31,4,13,6,4862|5465|8878|11015,NPAS2|PPARA|SQSTM1|KDELR3,0
+MyList,GO Biological Processes,19,GO:0015711,organic anion transport,19_GO:0051179 localization,-2.1,7.1,4,30284,413,31,3,9.7,5.3,5743|6520|8140,PTGS2|SLC3A2|SLC7A5,0
+MyList,GO Biological Processes,19,GO:0032940,secretion by cell,19_GO:0051179 localization,-2,6.8,3.9,30284,428,31,3,9.7,5.3,5743|64840|93145,PTGS2|PORCN|OLFM2,0
+MyList,GO Biological Processes,19,GO:0019221,cytokine-mediated signaling pathway,19_GO:0050896 response to stimulus,-2,6.8,3.9,30284,431,31,3,9.7,5.3,2069|6654|7032,EREG|SOS1|TFF2,0

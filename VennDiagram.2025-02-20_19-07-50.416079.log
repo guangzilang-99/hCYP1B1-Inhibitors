@@ -1,0 +1,34 @@
+INFO [2025-02-20 19:07:50] $x
+INFO [2025-02-20 19:07:50] list(`15an` = unique_downregulated_MHCC_15an, `15a` = unique_downregulated_MHCC_15a, 
+INFO [2025-02-20 19:07:50]     `15c` = unique_downregulated_MHCC_15c)
+INFO [2025-02-20 19:07:50] 
+INFO [2025-02-20 19:07:50] $filename
+INFO [2025-02-20 19:07:50] NULL
+INFO [2025-02-20 19:07:50] 
+INFO [2025-02-20 19:07:50] $fill
+INFO [2025-02-20 19:07:50] c("red", "green", "blue")
+INFO [2025-02-20 19:07:50] 
+INFO [2025-02-20 19:07:50] $alpha
+INFO [2025-02-20 19:07:50] [1] 0.5
+INFO [2025-02-20 19:07:50] 
+INFO [2025-02-20 19:07:50] $cex
+INFO [2025-02-20 19:07:50] [1] 1.5
+INFO [2025-02-20 19:07:50] 
+INFO [2025-02-20 19:07:50] $fontface
+INFO [2025-02-20 19:07:50] [1] "bold"
+INFO [2025-02-20 19:07:50] 
+INFO [2025-02-20 19:07:50] $fontfamily
+INFO [2025-02-20 19:07:50] [1] "sans"
+INFO [2025-02-20 19:07:50] 
+INFO [2025-02-20 19:07:50] $cat.cex
+INFO [2025-02-20 19:07:50] [1] 1.2
+INFO [2025-02-20 19:07:50] 
+INFO [2025-02-20 19:07:50] $cat.fontface
+INFO [2025-02-20 19:07:50] [1] "bold"
+INFO [2025-02-20 19:07:50] 
+INFO [2025-02-20 19:07:50] $cat.fontfamily
+INFO [2025-02-20 19:07:50] [1] "sans"
+INFO [2025-02-20 19:07:50] 
+INFO [2025-02-20 19:07:50] $main
+INFO [2025-02-20 19:07:50] [1] "Venn Diagram of Downregulated Genes in MHCC"
+INFO [2025-02-20 19:07:50] 

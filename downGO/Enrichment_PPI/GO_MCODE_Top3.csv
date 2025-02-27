@@ -1,0 +1,5 @@
+Network,Annotation
+MyList,GO:0051301|cell division|-26.4;GO:1903047|mitotic cell cycle process|-21.5;GO:0000278|mitotic cell cycle|-20.3
+MyList_MCODE_ALL,GO:0051301|cell division|-14.7;GO:1903047|mitotic cell cycle process|-12.6;GO:0000278|mitotic cell cycle|-12.1
+MyList_SUB1_MCODE_1,GO:0010564|regulation of cell cycle process|-10.3;GO:0051983|regulation of chromosome segregation|-10.0;GO:0051301|cell division|-9.2
+MyList_SUB1_MCODE_3,GO:0051302|regulation of cell division|-6.6;hsa04814|Motor proteins|-6.6;GO:0007018|microtubule-based movement|-5.5
